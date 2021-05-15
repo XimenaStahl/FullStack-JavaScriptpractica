@@ -27,7 +27,7 @@ boton.addEventListener('click', function(event) {
 
     if (asunto == '') {
         document.getElementsByClassName('errorAsunto')[0].innerHTML = 'El asunto es requerido.';
-    } else if (asunto == '') {
+    } else if (!asun) {
         document.getElementsByClassName('errorAsunto')[0].innerHTML = 'El asunto debe tener sólo letras.';
     } else {
         document.getElementsByClassName('errorAsunto')[0].innerHTML = '';
@@ -35,7 +35,7 @@ boton.addEventListener('click', function(event) {
 
     if (mensaje == '') {
         document.getElementsByClassName('errorMensaje')[0].innerHTML = 'El mensaje es requerido.';
-    } else if (mens == '') {
+    } else if (!mens) {
         document.getElementsByClassName('errorMensaje')[0].innerHTML = 'El mensaje debe tener sólo letras.';
     } else {
         document.getElementsByClassName('errorMensaje')[0].innerHTML = '';
